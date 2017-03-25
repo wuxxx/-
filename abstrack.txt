@@ -1,0 +1,8 @@
+With the rapid development of mobile Internet, billions of users in the world use mobile terminals to access the Internet.In order to ensure the absolute security of privacy data and prohibit harassment of spam, users put forward higher requirements for the network security of mobile terminal accessed, the security of the application data transfer and so on.
+
+When the mobile terminal accesses the Internet through AP (WirelessAccessPoint), the application in the terminal can communicate with its server. In the transmission of data, the data packet is very easy to be captured, tampered with and attack. Therefore, the security of data in the transmission is essential.In this paper, use the AP which brush into the OpenWrt firmware as a platform, by writing Linux kernel program, installed on the AP, then capture the communications packets between the applications and the background server. Using the captured data packets to tamper with, try to attack the application, and ultimately determine whether the application of network communication in a safe state.
+
+The work has done in this dissertation: Firstly, in the net router (NETGEAR), brush into the embedded development platform OpenWrt. Secondly, in the Linux system, use the OpenWrt SDK, write ipk program, so that it can run in the AP. Thirdly, use the Netfilter framework of the Linux system, hook functions are used to capture and modify packets in the network protocol stack. Fourthly, use the mobile terminal access to the AP, we deceive and attack the application software in the terminal.Through the above work, to determine its communication with the background server, the data packet is safe enough.
+
+
+Key Word:OpenWrt; Netfilter; data package; Spoofing attack
